@@ -16,6 +16,11 @@ photo = ImageTk.PhotoImage(image)
 label2 = ttk.Label(root, text="Image with text", image=photo, padding=5, compound="right")
 label2.pack()
 
+# label["image"] = photo
 
+greeting = tk.StringVar()
+label3 = ttk.Label(root, padding=10, textvariable=greeting)
+label3.pack()
 
+greeting.set("Hello, John!")
 root.mainloop()
